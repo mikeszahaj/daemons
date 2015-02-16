@@ -71,7 +71,7 @@ module Daemons
     end
 
     def output_logfile
-      (options[:log_output] && logdir) ? File.join(logdir, @group.app_name + '.output') : nil
+      (options[:log_output] && logdir) ? File.join(logdir, @group.app_name + '.output.log') : nil
     end
 
     def logfile
